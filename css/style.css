@@ -75,6 +75,37 @@ ul{
     transform: scale(1.07);
 }
 
+.logos-ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0px;
+    justify-content: center;
+    padding: 0 10px;
+    width: 1000px;
+}
+
+.logos-li {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    flex: 1 1 200px;
+    max-width: 220px; 
+    border-radius: 15px;
+    padding: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.logos-li img {
+    height: 40px;    
+    margin: 0 auto 10px auto;
+}
+
 mark {
     background-color: #f5e605;
     color: #333333;
@@ -149,25 +180,31 @@ section:nth-child(4) {
 }
 
 section:nth-child(5) {
+    padding: 100px 10%;
+    background-color: #f7f8fa;
+    color: #565a6b;
+}
+
+section:nth-child(6) {
     height: 200px;
     background-color: #f5e605;
     color: #333333;
     font-weight: bold;
 }
 
-section:nth-child(5) mark{
+section:nth-child(6) mark{
     background-color: #0072BC;
     color: #f5e605;
     font-weight: bold;
 }
 
-section:nth-child(6) {
+section:nth-child(7) {
     padding: 100px 0;
     background-image: url("../img/dot-grid.png");
     color: #565a6b;
 }
 
-section:nth-child(7) {
+section:nth-child(8) {
     flex-direction: row;
     justify-content: space-between;
     padding: 40px;
@@ -252,34 +289,33 @@ a{
 }
 
 button {
-    background-color: transparent;
+    background-color: #4F9ED0;
     padding: 10px 14px;
-    border: solid 2px #f5e605;
     border-radius: 10px;
-    color: #f5e605;
+    border: none;
+    color: white;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: poppins;
     cursor: pointer;
     margin: 10px;
-    transition: transform 0.2s ease-in-out;
-    box-shadow: 0px 2px 6px rgba(2, 59, 123, 0.1);
+    transition: background-color 0.1s ease-in-out;
     display: flex;
     align-items: center;
 }
 
 button img{
-    height: 20px;
+    height: 25px;
     margin-right: 5px;
+
 }
 button:hover {
-    border: solid 2px #ffffff;
+    background-color: #0072BC;
     color: #ffffff;
-
 }
 
 button:active {
-    background-color: #4F9ED0;
+    background-color: #9ac7e3;
 }
 
 .servicios-li img{
@@ -355,6 +391,7 @@ button:active {
 }
 
 .footer-columns button{
+    background-color: transparent;
     margin: 0;
     color: #0072BC;
     border: solid 2px #0072BC;
@@ -521,7 +558,7 @@ button:active {
     }
 
     .servicios-li {
-        flex: 1 1 45%;       /* 2 por fila */
+        flex: 1 1 45%;
         max-width: none;
     }
 
@@ -529,6 +566,23 @@ button:active {
         width: 100px;
     }
     
+    .logos-ul {
+        padding: 0;
+        gap: 5px;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .logos-li {
+        flex: 1 1 35%;
+        max-width: none;
+    }
+
+    .logos-li img {
+        width: 100px;
+        height: auto;
+    }
+
     .columnas {
         flex-direction: column;
         gap: 10px;
