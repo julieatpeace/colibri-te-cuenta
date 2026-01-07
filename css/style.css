@@ -383,6 +383,10 @@ button:active {
     height: 60px;
 }
 
+.hero-logo{
+    width: 80%;
+}
+
 .footer-columns {
     width: 100%;
     display: flex;
